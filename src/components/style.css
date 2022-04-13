@@ -1,0 +1,105 @@
+.header {
+  background: #B5B5B5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1em 1em 1em;
+}
+.header__content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--white);
+  margin-block: 1em;
+}
+.header__content__subtitle {
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  margin-bottom: 1em;
+}
+.header__content__title {
+  padding: 0 1em 0 1em;
+  font-weight: 300;
+  font-size: 1.42em;
+  margin-bottom: 1em;
+}
+.header__content__btn {
+  border: 0.2em solid var(--white) !important;
+  border-radius: 0 !important;
+  color: var(--white) !important;
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 0.7em 3em 0.7em 3em !important;
+  background: none;
+  cursor: pointer;
+}
+
+.card {
+  width: 98%;
+  margin: 1% auto;
+  display: flex;
+  flex-direction: column;
+}
+.card__text {
+  background: var(--yellow);
+  padding: 1em 1em 0 1em;
+  color: var(--white);
+  z-index: 1 !important;
+}
+.card__text__line {
+  display: flex;
+  height: 0.2em;
+  width: 6em;
+  margin-bottom: 1em;
+  background: var(--white);
+}
+.card__text__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.card__text__title__logo {
+  margin-right: 0.8em;
+}
+.card__text__title__text {
+  font-weight: 300 !important;
+  font-size: 1.6em;
+}
+.card__text__text {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+.card__text__btn {
+  width: 100%;
+  color: var(--white) !important;
+  border: 0.1em solid var(--white) !important;
+  border-radius: 0 !important;
+  margin-bottom: 2em !important;
+  letter-spacing: 0.2em !important;
+  font-size: 0.8em !important;
+}
+.card__img {
+  margin: -1.35em auto;
+}
+.card__img__img {
+  width: 102%;
+  margin-left: -1%;
+  padding: 0;
+  z-index: -1;
+}
+
+.featured__collection__grid__single {
+  margin-block: 100px;
+}
+
+.icons {
+  color: var(--white) !important;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
