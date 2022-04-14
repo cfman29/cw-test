@@ -3,24 +3,28 @@
         "id": 1,
         "category": "Decorative & Modern",
         "title": "William Morris",
-        "tags": ["Bookmarks", "Coasters", "Keyrings", "Mugs", "Gifts", "All"]
+        "tags": ["Bookmarks", "Coasters", "Keyrings", "Mugs", "Gifts", "All"],
+        "image": "williammorris"
     },
     {
         "id": 2,
         "category": "Decorative & Modern",
         "title": "Frida Kahlo",
-        "tags": []
+        "tags": [],
+        "image": "fridakahlo"
     },
     {
         "id": 3,
         "category": "Art & History",
         "title": "Suffragettes",
-        "tags": []
+        "tags": [],
+        "image": "suffragettes"
     },
     {
         "id": 4,
         "category": "Decorative & Modern",
         "title": "Thornback & Peel",
-        "tags": []
+        "tags": [],
+        "image": "thronbackpeel"
     }
 ]

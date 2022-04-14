@@ -120,12 +120,264 @@
 }
 
 .featured{
+    width: 94%;
+    margin: 0 auto 2em auto;
+    &__title{
+        font-size: 0.5em;
+        letter-spacing: 0.6em;
+    }
+    &__subtitle{
+        margin: 0.5em 0 -2em 0;
+        font-size: 1.4em;
+    }
     // outline: 1px solid red;
     &__collection{
         // outline: 1px solid blue;
         &__grid{
             &__single{
-                margin-block: 100px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 0 auto;
+                width: 100%;
+                height: 282px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                color: var(--black);
+
+                &__line{
+                    margin-top: 4em;
+                    transform: translate(1.21em, -0.6em);
+                    height: 0.2em;
+                    width: 6em;
+                    background: var(--white);
+ 
+                }
+
+                &__category{
+                    
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    margin-left: 1em;
+                    font-weight: 400;
+                    font-size: 1.2em;
+                    display: flex;
+                }
+
+                &__title{
+                    font-weight: 300;
+                    font-size: 1.6em;
+                    margin-left: 0.75em;
+
+                }
+
+                &__tags{
+                    display: flex;
+                    font-size: 0.7em;
+                    margin-left: 1.73em;
+                }
+
+                &__margin{
+                    margin-top: 9em;
+                }
+
+            }
+        }
+    }
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2em;
+    &__title{
+        margin-left: 3%;
+        font-size: 0.5em;
+        letter-spacing: 0.6em;
+        font-weight: 500;
+    }
+    &__subtitle{
+        margin: 0 0 1em 3%;
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+    &__card{
+        // outline: 5px solid red;
+        color: var(--white);
+        width: 100%;
+        margin: 0 auto 1.2em auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__single{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            // outline: 1px solid green;
+            width: 48%;
+            height: 6em;
+            margin-bottom: 1em;            
+
+            p{
+                max-width: 80%;
+            }
+        }
+    }
+    &__large{
+        width: 100%;
+        height: 15em;
+        background:#938F8D;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        &__line{
+            margin-top: 6em;
+            transform: translate(1em, -0.3em);
+            height: 0.2em;
+            width: 9em;
+            background: var(--white);
+        }
+        p{
+            font-size: 0.8em;
+            margin: 0 0 0.5em 1.2em;
+        }
+        h4{
+            font-size: 1.4em;
+            font-weight: 300;
+            margin: 0 0 0 0.64em;
+        }
+
+    }
+}
+
+.footer{
+    width: 100%;
+    margin: 0 auto;
+    background: var(--brown);
+    color: var(--white);
+    &__top{
+        padding: 1em;
+        background: #36281B;
+
+        p{
+            font-size: 0.8em;
+        }
+
+        h4{
+            font-size: 1.4em;
+            font-weight: 300;
+            width: 75%;
+            margin-bottom: 1em;
+        }
+        &__cta{
+            display: flex;
+            justify-content:space-between;
+            margin-bottom: 1em;
+            &__input{
+                border-radius: 0;
+                background: var(--white);
+                border: 0;
+                height: 2.5em;
+                width: 60%;
+                // margin-right: 1em;
+            }
+            &__btn{
+                border: 0.1em solid var(--white) !important;
+                border-radius: 0 !important;
+                color: var(--white) !important;
+                font-size: 0.8em !important;
+                font-weight: 400 !important;
+                padding: 0.7em 3em 0.7em 3em !important;
+                background: none; 
+                cursor: pointer;
+                width: 36%;
+                height: 2.6em !important;
+            }
+        }
+    }
+    &__bottom{
+        padding: 1em;
+
+        &__cta{
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-bottom: 1em;
+        }
+
+        &__pride{
+            margin: 0 1em 1em 0;
+            font-weight: 300;
+        }
+
+        &__socials{
+            width: 80%;
+            margin-bottom: 1.6em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__customer{
+            display: flex;
+            font-weight: 300;
+            font-size: 0.8em;
+            margin-bottom: 1em;
+        }
+
+        &__phone, &__email{
+            display: flex;
+            color: var(--white);
+            text-decoration: none;
+            width: 100%;
+        }
+
+        &__phone{
+            margin-bottom: 0.5em;
+        }
+
+        &__email{
+            margin-bottom: 1.2em;
+        }
+
+        &__infoTitle, &__aboutTitle{
+            margin-bottom: 0.8em;
+            font-weight: 300;
+        }
+
+        &__infoPages, &__aboutPages{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1em;
+            a{
+                color: var(--white);
+                text-decoration: none;
+                margin-bottom: 0.5em;
+                font-weight: 300;
+            }
+        }
+
+        &__logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            img{
+                margin-right: 1em;
+                width: 8%;
+            }
+
+            p{
+                font-weight: 300;
+                font-size: 0.8em;
             }
         }
     }

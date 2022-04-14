@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Fridge Magnets",
+        "image": "fridge"
+    },
+    {
+        "name": "Coasters",
+        "image": "coasters"
+    },
+    {
+        "name": "Tableware",
+        "image": "tableware"
+    },
+    {
+        "name": "Hardback Notepads",
+        "image": "hard_notepads"
+    },
+    {
+        "name": "Notepads",
+        "image": "notepads"
+    },
+    {
+        "name": "Keyrings",
+        "image": "keyrings"
+    },
+    {
+        "name": "Glasses Cases & Lense Cloths",
+        "image": "glasses"
+    },
+    {
+        "name": "Button Badges",
+        "image": "button"
+    }
+]
