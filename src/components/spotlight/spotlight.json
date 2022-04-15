@@ -1,0 +1,72 @@
+[
+    {
+        "category": "PICASSO",
+        "name": "Arlequin Fridge Magnet",
+        "size": "10",
+        "price": "1.30",
+        "url": "#"
+    },
+    {
+        "category": "PICASSO",
+        "name": "Butterfly Fridge Magnet",
+        "size": "10",
+        "price": "1.30",
+        "url": "#"
+    },
+    {
+        "category": "PICASSO",
+        "name": "Dom Quichotte Metal Keyring",
+        "size": "10",
+        "price": "1.30",
+        "url": "#"
+    },
+    {
+        "category": "PICASSO",
+        "name": "Guernica Bookmark",
+        "size": "10",
+        "price": "1.30",
+        "url": "#"
+    },
+    {
+        "category": "PICASSO",
+        "name": "La Colombe du Festival de la Jeunesse Coaster",
+        "size": "10",
+        "price": "1.30",
+        "url": "#"
+    },
+    {
+        "category": "DOCUMENT FOLDERS",
+        "name": "Persistence of Memory, 1931 Document Folder",
+        "size": "10",
+        "price": "1.30",
+        "url": "#"
+    },
+    {
+        "category": "PUZZEL POSTCARDS",
+        "name": "Cafe Terrace at Night Puzzle Postcard",
+        "size": "10",
+        "price": "1.30",
+        "url": "#"
+    },
+    {
+        "category": "MUGS",
+        "name": "Grida Kahlo Flowers Mug",
+        "size": "10",
+        "price": "1.30",
+        "url": "#"
+    },
+    {
+        "category": "KEYRINGS",
+        "name": "Chair 1 Metal Keyring",
+        "size": "10",
+        "price": "1.30",
+        "url": "#"
+    },
+    {
+        "category": "FRIDGE MAGNET",
+        "name": "Alice and Cards Fridge Magnet",
+        "size": "10",
+        "price": "1.30",
+        "url": "#"
+    }
+]

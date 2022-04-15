@@ -7,7 +7,7 @@ export const productCards =()=>{
             { prods.map(prod =>{
                 return(
                     // <div className="product__card__single" style={{ backgroundImage: `url(./${prod.image}.png)` }} key={prod.name}>
-                    <div className="product__card__single" style={{ background: 'grey'}} key={prod.name}>
+                    <div className="product__card__single" style={{ backgroundImage: 'url("http://placekitten.com/g/400")'}} key={prod.name}>
                         <p>{prod.name}</p>
                     </div>
             )})}

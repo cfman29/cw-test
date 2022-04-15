@@ -1,27 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import Logo from './img/CW-Logo.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import PersonIcon from '@mui/icons-material/Person';
+import LanguageIcon from '@mui/icons-material/Language';
 import Button from '@mui/material/Button';
 
 function header(){
     return(
         <div className="header">
+            <div className="header__prompt">
+                <div className="header__prompt__account">
+                    <p className="header__prompt__account__up">New to CustomWorks trade site? <b>SIGN UP</b></p>
+                    <p className="header__prompt__account__in">Already a trade customer? <b>SING IN</b></p>
+                </div>
+                <div className="header__prompt__learn">
+                    <p>Learn more about <b>TRADE ACCOUNTS</b></p>
+                </div>
+            </div>
             <div className="header__nav">
-                <MenuIcon className="header__nav__menu icons" />
-                <img src={Logo} alt="Logo" className="header__nav__img" />
+                <div className="header__nav__menu">
+                    <MenuIcon className="header__nav__menu__icon icons" />
+                    <p>MENU</p>
+                </div>
+                <div className="header__nav__logo">
+                    <img src={Logo} alt="Logo" className="header__nav__logo__img" />
+                </div>
                 <div className="header__nav__icons">
-                    <SearchIcon className="header__nav__search icons" />
-                    <ShoppingBasketIcon className="header__nav__basket icons"/>
+                    <SearchIcon className="header__nav__icons__single icons" />
+                    <PersonIcon className="header__nav__icons__single icons"/>
+                    <ShoppingBasketIcon className="header__nav__icons__single icons"/>
+                    <LanguageIcon className="header__nav__icons__single icons"/>
                 </div>
             </div>
             <div className="header__content">
-                <h5 className="header__content__subtitle"> WHOLESALE MADE EASY</h5>
-                <h1 className="header__content__title">We have over 20 years experience creating bespoke products for museums, galleries, zoos, visitor sites and many more</h1>
-                {/* <input type="button" className="header__content__btn" value="SIGN UP" /> */}
-                <Button className="header__content__btn" variant="outlined">SIGN UP</Button>
+                <h5 className="header__content__title">The Art & Design Gifting Co.</h5>
+                <h1 className="header__content__subtitle">Explore our extensive range of gifts and sign up to view trade pricing and order.</h1>
+                <div className="header__content__btn">
+                    <Button className="header__content__btn__btn" variant="outlined">CREATE A TRADE ACCOUNT</Button>
+                </div>
             </div>
         </div>
     )

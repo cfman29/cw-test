@@ -10,7 +10,7 @@ html{
 
 .App{
     background: var(--white);
-    width: 380px;
+    // width: 380px;
     margin: 0 auto;
     // outline: 1px solid red;
     display: flex;
@@ -21,4 +21,5 @@ html{
     --white: #fff;
     --yellow: #D5AE3F;
     --brown: #766A64;
+    --grey: #F2F2F2;
 }

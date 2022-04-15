@@ -6,11 +6,12 @@ function collection(){
 
     return (
         <div className="featured">
-            <h2 className="featured__title">EXCLUSIVELY FROM CUSTOMWORKS</h2>
-            <h2 className="featured__subtitle">Featured Collections</h2>
-            <div className="featured__collection">
-                <CollectionItems />
+            <div className="featured__text">
+                <h2 className="featured__text__subtitle subtitle">EXCLUSIVELY FROM CUSTOMWORKS</h2>
+                <h2 className="featured__text__title title">Featured Collections</h2>
+                <p className="featured__text__view">VIEW ALL</p>
             </div>
+            <CollectionItems />
         </div>
     )
 }
