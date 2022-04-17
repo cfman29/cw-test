@@ -29,10 +29,10 @@ function header(){
                     <img src={Logo} alt="Logo" className="header__nav__logo__img" />
                 </div>
                 <div className="header__nav__icons">
-                    <SearchIcon className="header__nav__icons__single icons" />
-                    <PersonIcon className="header__nav__icons__single icons"/>
-                    <ShoppingBasketIcon className="header__nav__icons__single icons"/>
-                    <LanguageIcon className="header__nav__icons__single icons"/>
+                    <SearchIcon className="header__nav__icons__single header__nav__icons__single__search icons" />
+                    <PersonIcon className="header__nav__icons__single header__nav__icons__single__person icons"/>
+                    <ShoppingBasketIcon className="header__nav__icons__single header__nav__icons__single__basket icons"/>
+                    <LanguageIcon className="header__nav__icons__single header__nav__icons__single__language icons"/>
                 </div>
             </div>
             <div className="header__content">

@@ -319,16 +319,18 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    &__subtitle{
-        font-weight: 500;
-        font-size: 1em;
-        letter-spacing: 0.2em;
-        margin: 0 0 0.5em 3em;
-    }
-    &__title{
-        font-weight: 400;
-        font-size: 1.2em;
-        margin: 0 0 2em 2.5em;
+    &__text{
+        margin-bottom: 1em;
+        &__subtitle{
+            font-weight: 500;
+            font-size: 1em;
+            letter-spacing: 0.2em;
+            margin-bottom: 0.5em;
+        }
+        &__title{
+            font-weight: 400;
+            font-size: 1.2em;
+        }
     }
     &__card > *{
         flex-basis: 17%;
@@ -392,6 +394,7 @@
                 margin: 0 0.5em 0 0.5em;
                 cursor: pointer;
             }
+
         }
     }
 }
@@ -602,6 +605,17 @@
     background-size: cover;
 }
 
+@media (max-width: 1350px) {
+    .footer__second{
+        &__contact{
+            width: 30%;
+        }
+        &__info{
+            width: 70%;
+        }
+    }
+}
+
 @media (max-width: 1000px){
     .card__text__left{
         font-size: 0.7em;
@@ -616,24 +630,73 @@
 }
 
 @media (max-width: 975px){
-    .header__prompt{
-        display: none;
+    .header{
+        &__prompt{
+            display: none;
+        }
+        &__nav{
+            &__icons{
+                &__single{
+                    &__person, &__language{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+        &__content{
+            &__title{
+                font-size: 1.4em;
+                letter-spacing: 0.2em;
+                font-weight: 600;
+                margin-bottom: 1em !important;
+            }
+            &__subtitle{
+                width: 80%;
+                font-weight: 400;
+                font-size: 2em;
+            }
+        }
     }
 
     .spotlight__card > *{
         flex-basis: 26%;
     }
+
+    .footer{
+        &__second{
+            &__contact{
+                width: 100%;
+            }
+            &__info{
+                width: 100%;
+                &__first, &__second, &__third{
+                    width: 100%;
+                    // display: flex;
+                    // flex-direction: column;
+                    margin: 0 0 1em 10%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 600px){
+    .header{
+        &__content{
+            &__title{
+                width: 90%;
+                margin: 0 auto
+            }
+        }
+    }
     .card{
         flex-direction: column;
         margin: 1em auto 2em auto;
         width: 90%;
         height: auto;
-        outline: 1px solid red;
+        // outline: 1px solid red;
         &__img, &__text{
-            outline: 1px solid red;
+            // outline: 1px solid red;
             width: 100%;
             padding: 0 !important;
             margin: 0 auto 2em auto;
@@ -641,13 +704,15 @@
         &__text{
             flex-direction: column;
             height: 30em;
+            margin: 0;
             &__left, &__right{
                 width: 100%;
             }
             &__right{
-                margin-top: 2em;
+                width: 90%;
+                margin: 2em auto;
                 font-size: 1em;
-                padding: 1em;
+                padding: 0em;
                 &__btn{
                     max-width: 80% !important;
                     width: 100% !important;
@@ -655,16 +720,49 @@
                     justify-self: center;
                 }
             }
-            &__img__img{
-                margin: 0 !important;
-            }
         }
+        &__img__img{
+            margin: 0 !important;
+        }
+    }
+    .featured__collection__single{
+        width: 100%;
+    }
+    .product__card__single{
+        width: 48%;
     }
 }
 
 
 @media (max-width: 500px){
+    .header{
+        &__nav{
+            padding: 2em 1em !important;
+        }
+        &__content{
+        margin: 15em 0 !important;
+        }
+    }
+
     .spotlight__card > *{
-        flex-basis: 40%;
+        flex-basis: 100%;
+    }
+
+    .spotlight{
+        &__card{
+            &__single:first-child{
+                display: flex;
+                margin-bottom: 6em;
+            }
+            &__single{
+                display: none;
+                &__price{
+                    margin-bottom: 3em;
+                }
+                &__url{
+                    display: none;
+                }
+            }
+        }
     }
 }

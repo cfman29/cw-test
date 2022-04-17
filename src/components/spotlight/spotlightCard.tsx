@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import Carousel from "react-multi-carousel";
 import cards from './spotlight.json'
 import FavoriteIcon from '@mui/icons-material/FavoriteBorder';
 
 export const spotlightCards =()=>{
+
+    const [screenSize, getDimension] = useState({
+        width: window.innerWidth
+    });
+    const setDimension = () => {
+        getDimension({
+            width: window.innerWidth
+        })
+    }
+    
+    useEffect(() => {
+        window.addEventListener('resize', setDimension);
+        return(() => {
+            window.removeEventListener('resize', setDimension);
+            console.log(screenSize)
+        })
+    }, [screenSize])
+
     return(
         <div className="spotlight__card">
             {cards.map(card =>{
@@ -16,7 +35,6 @@ export const spotlightCards =()=>{
                         <a className="spotlight__card__single__url" href={card.url}>SEE THE TRADE PRICE</a>
                         <FavoriteIcon className="spotlight__card__single__fav" />
                     </div>
-
                 )
             })}
         </div>
